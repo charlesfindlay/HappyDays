@@ -46,11 +46,11 @@
             </objects>
             <point key="canvasLocation" x="860" y="137.18140929535232"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Happy Days-->
         <scene sceneID="fpu-8j-uHV">
             <objects>
                 <collectionViewController id="mSu-YM-zjE" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="tub-w6-w3n">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="tub-w6-w3n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,19 +67,40 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qbf-xX-NfO"/>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qbf-xX-NfO" secondAttribute="bottom" id="1Bs-rn-1YC"/>
+                                    <constraint firstItem="qbf-xX-NfO" firstAttribute="top" secondItem="hac-N5-pmB" secondAttribute="top" id="S4v-PF-Sic"/>
+                                    <constraint firstItem="qbf-xX-NfO" firstAttribute="leading" secondItem="hac-N5-pmB" secondAttribute="leading" id="mH9-hM-egV"/>
+                                    <constraint firstAttribute="trailing" secondItem="qbf-xX-NfO" secondAttribute="trailing" id="mby-EY-anG"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FA5-Mt-y1k">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="8kX-d3-BMD">
+                                    <frame key="frameInset" minY="3" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                            <color key="value" red="0.9737606348167539" green="0.9737606348167539" blue="0.9737606348167539" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </searchBar>
+                            </subviews>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="mSu-YM-zjE" id="xcY-7o-XIS"/>
                             <outlet property="delegate" destination="mSu-YM-zjE" id="zKR-iL-ks3"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="e9B-Iu-7hj"/>
+                    <navigationItem key="navigationItem" title="Happy Days" id="e9B-Iu-7hj"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csI-Ty-Yj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
