@@ -29,6 +29,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2r-Ln-sIz">
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <action selector="requestPermissions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyv-EN-t2C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -41,6 +44,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="Nuq-uK-RnJ"/>
+                    <connections>
+                        <outlet property="helpLabel" destination="Lyk-2u-aoV" id="lOQ-g2-1JN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,6 +83,9 @@
                                     <constraint firstItem="qbf-xX-NfO" firstAttribute="leading" secondItem="hac-N5-pmB" secondAttribute="leading" id="mH9-hM-egV"/>
                                     <constraint firstAttribute="trailing" secondItem="qbf-xX-NfO" secondAttribute="trailing" id="mby-EY-anG"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="qbf-xX-NfO" id="6Tg-aG-k8Q"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="FA5-Mt-y1k">
