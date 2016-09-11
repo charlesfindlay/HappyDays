@@ -62,10 +62,10 @@
 				56FE0F4A1D84AB1F00459749 /* ViewController.swift */,
 				56FE0F4C1D84AB1F00459749 /* Main.storyboard */,
 				56C56CE81D84D0B900DECC49 /* MemoryCell.swift */,
+				56C56CE61D84CFB700DECC49 /* MemoriesViewController.swift */,
 				56FE0F4F1D84AB1F00459749 /* Assets.xcassets */,
 				56FE0F511D84AB1F00459749 /* LaunchScreen.storyboard */,
 				56FE0F541D84AB1F00459749 /* Info.plist */,
-				56C56CE61D84CFB700DECC49 /* MemoriesViewController.swift */,
 			);
 			path = HappyDays;
 			sourceTree = "<group>";
