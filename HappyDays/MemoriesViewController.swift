@@ -43,6 +43,14 @@ class MemoriesViewController: UICollectionViewController {
         }
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        checkPermissions()
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
